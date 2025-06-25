@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* ❌ Mistake: use vh instead of vmin for full height */
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #EAC9C1;
+}
+
+#container {
+  padding: 2vmin;
+  border: 2px solid #D3AB9E;
+  border-radius: 2vmin;
+  background-color: #fff;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-family: cursive;
+  font-size: 40px;
+  margin-bottom: 2vmin;
+}
+
+#city {
+  border-radius: 2vmin;
+  padding: 0.5vmin 1vmin;
+  width: 70%;
+  margin-bottom: 1vmin;
+  border: 1px solid black;
+   margin-top: 20px; 
+}
+
+button {
+  border: 1px solid black;
+  padding: 0.7vmin 1.5vmin;
+  border-radius: 1vmin;
+  background-color: #B7E3CC;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1vmin;
+}
+
+button:hover {
+  background: #7D82B8;
+}
+
+#info {
+  font-size: 20px;
+}
+
+#icon {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+  margin-bottom: 0;
+  display: none;
+}
+
+#forecast {
+  margin-top: 50px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
